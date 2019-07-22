@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Project 1</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="About.html">About</a></li>
+							<li><a href="Resume.html">Resume</a></li>
+							<li><a href="mailto:travis.lageman@gmail.com">Contact</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<h1>Baltimore City: 311 Rat Requests</h1>
+							<img src="Project1/311RatRequests_Lageman.png" width=900 alt="" />
+
+							<h2>Project Description</h2>
+							<p>1/4 mile Hexagonal grids were created across Baltimore City and joined with 311 Requests for Rat Rubout/Rodents (from 2014-Present). Each grid was assigned a shade based on the number of requests it contained using Natural Jenks classification. This number was used to represent height in a 3-D Map with the Qgis2threejs plug-in.  Height was exaggerated slightly using the vertical exaggeration field (value = 15). This layer was laid over a digital elevation model of Baltimore City. Finally, community statistical areas with > 50% African-American Population (Blue) or > 50% White population (Gray) were identified and overlaid on the hexagonal grids. All project materials were projected to NAD 83 State Plane Maryland FIPS 1900 Feet. A 2-D Map was also created as a counterpart to the 3-D Map. Both of which were created in QGIS 3.2.
+						  </p>
+						  Spatial Lite Queries were also conducted to pull out information from the Real Property Dataset. The three queries developed (screenshots included in products folder) produced the following information that could be used in further analysis of 311 Rat Requests:<br/>
+						  <span>&#8226;</span> Number of pre-1900 built properties by neighborhood<br/>
+						  <span>&#8226;</span> Total number of properties by neighborhood<br/>
+						  <span>&#8226;</span> Average tax value of properties by neighborhood<br/>
+							<p>
+							<h2>Conclusion</h2>
+							<p>It was observed that a significant proportion of 311 Rat Requests were attributed to predominatly Black neighborhoods in Baltimore City. A quick visual scan of either the 2-D or 3-D maps shows significantly higher numbers of requests in West, East, and Northwest Baltimore all of which correspond with predominatly Black neighborhoods.
+							<p>
+						  <p>Further analysis could be carried out with the information provided by the SQL queries, which might provide insight into a relationship between 311 Rat Requests, age of property and property value.
+							<p>
+						  <a href="Project1/311RatRequestsFlat_Lageman.pdf">311 Rat Requests 2D</a><br/>
+						  <a href="Project1/311RatRequests_Lageman.png">311 Rat Requests 3D</a>
+
+							<h2>Data</h2>
+							 <span>&#8226;</span>  <a href="https://gis-baltimore.opendata.arcgis.com/datasets/b41551f53345445fa05b554cd77b3732_0">Baltimore City Open GIS Portal</a><br/>
+						   <span>&#8226;</span>  <a href="https://bniajfi.org/">Baltimore City Community Statistical Area with Demographic Data - [BNIA]</a><br/>
+						   <span>&#8226;</span>  <a href="https://data.baltimorecity.gov/City-Services/311-Customer-Service-Requests/9agw-sxsr">311 Service Requests for Rat/Rodent Problems - [Baltimore City Open GIS Portal]</a><br/>
+						   <span>&#8226;</span>  <a href="https://imap.maryland.gov/Pages/lidar-dem-download-files.aspx">Baltimore City Digital Elevation Model - MD iMAP -  [Maryland Mapping and GIS Portal]</a><br/>
+							<p>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Send me a message</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Travis Lageman</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
