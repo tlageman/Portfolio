@@ -60,10 +60,10 @@
 						 <p>
 							First, a hexagonal analysis was performed to determine the density of fires across Baltimore City that included all 911 Fire Calls. This included both 1/4 mi and 1/2 mi hexagons. This analysis showed a concentration of calls in East and West Baltimore, as well as some hot-spots in Northwest and Southern Baltimore but to a lesser extent.
 							<p>
-						  	1/2 mile buffer
-							<img src="Project4/Hex50.png" height="500" alt="" /></span>
-							1/4 mile buffer
-							<img src="Project4/Hex25.png" height="500" alt="" /></span>
+						  	
+							<img src="Project4/Hex50.png" height="700" alt="" /></span>
+							
+							<img src="Project4/Hex25.png" height="700" alt="" /></span>
 							<p>
 						 <h2>Neighborhood Map</h2>
 						 <p>
@@ -71,12 +71,12 @@
 						 <p>
 						 <i>* Two features were deleted that would have skewed results. The first was the prison facility located in the heart of Baltimore. The second was the Fairfield area in South Baltimore, which is essentially all industrial area with a total population less than 30.</i>
 						 <p>
-						 <img src="Project4/Neighborhood_Fire_pop.png" height="500" alt="" />
+						 <img src="Project4/Neighborhood_Fire_pop.png" height="700" alt="" />
 						 <p>
 						 <h2>Buffer Analysis</h2>
 						 A 1 mile buffer analysis was performed on every fire station in Baltimore to determine which stations may be the most called upon. A radius of 1 mile was chosen due to it nearly covering the enitre area of Baltimore City as well as most all fire call data points. This analysis showed a similar story again; the fire stations in East and West Baltimore have been more more stressed in terms of the number of fire calls received that are within a 1 mile radius.
 						 <p>
-						 <img src="Project4/BufferAnalysis.png" height="500" alt="" />
+						 <img src="Project4/BufferAnalysis.png" height="700" alt="" />
 						 <p>
 						 <h2>Spatial Regression</h2>
 						 The following variables were thought to be of interest that might influence the number of 911 Fire Calls:</br>
@@ -87,11 +87,11 @@
 							 <p>
 							<h3>Local Moran's I</h3>
 							A Local Moran's I was performed to see if there was spatial autocorrelation with the Fires per Person by Census Tract, which resulted in notable positive spatial autocorrelation (0.455662).
-							<img src="Project4/MoransI_FireByPop.png" height="500" alt="" />
+							<img src="Project4/MoransI_FireByPop.png" height="700" alt="" />
 							<p>
 							Clustering is observered in East and (South)West Baltimore with census tracts with higher numbers of fire per person, while clustering is also observed in the North of Baltimore with census tracts with lower numbers of fire per person.
 							<p>
-							<img src="Project4/LISA_Cluster_FireByPop.png" height="500" alt="" />
+							<img src="Project4/LISA_Cluster_FireByPop.png" height="700" alt="" />
 							<p>
 							<h3>Regression</h3>
 							The next step was to perform a spatial regression using the variables of interest. This was performed in GeoDa. Inputting the variables and running a Classic OLS Regression indicated that a Spatial Lag Model should be used based on the LaGrange Multiplier significance value. <a href="Project4/RegressionOutput.txt">[Output]</a></br>
@@ -117,10 +117,10 @@
 							<p>
 							<h3>Histograms</h3>
 							Data points for fire calls (from 2015-2018) were coded based on the month of the call as well as the time of day that the call was made. For the month, coding was done by integers, 1-12 for each month. The below histogram shows a relatively even spread of fires by month, with a max in April and a min in February.
-							<img src="Project4/911FiresByMonth.png" height="500" alt="" />
+							<img src="Project4/911FiresByMonth.png" height="700" alt="" />
 							<p>
 							For time of day, coding was done by morning (6am-12pm), afternoon (12pm-6pm), evening/night (6pm-12pm), and late night. The below histogram shows a greater number of calls in the evening/night. This may be for the fact that people have returned home for the day performing a number of activities such as cooking that may contribute to fire incidents. Additionally, for a call to be made for a Fire at home, the person would need to be home to make the call.
-							<img src="Project4/911FiresByTOD.png" height="500" alt="" />
+							<img src="Project4/911FiresByTOD.png" height="700" alt="" />
 							<p>
 							<h3>Cartogram</h3>
 							One last feature that was explored in GeoDa was the Cartogram. Cartograms were created for fire station points based on the number of fires within 1 mile of each station in a given season (i.e. Fall, Spring, etc.) for the year 2015. Those cartograms were combined into a GIF, and while not very insightful, it shows how the Eastern and Western Baltimore Fire Stations have higher number of nearby fire calls throughout the year, irregardless of the season.
